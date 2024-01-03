@@ -22135,7 +22135,7 @@ expect(
 
 </details>
 <details>
-<summary>monday_insensintive_upper_twodim</summary>
+<summary>monday_insensitive_upper_twodim</summary>
 
 ```python
 input = (
@@ -22167,7 +22167,7 @@ expect(
     node,
     inputs=[input],
     outputs=[output],
-    name="test_strnormalizer_export_monday_insensintive_upper_twodim",
+    name="test_strnormalizer_export_monday_insensitive_upper_twodim",
 )
 ```
 
