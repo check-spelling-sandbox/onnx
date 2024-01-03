@@ -19659,7 +19659,7 @@ node = onnx.helper.make_node(
     "Shrink",
     inputs=["x"],
     outputs=["y"],
-    lambd=1.5,
+    lambda=1.5,
 )
 X = np.arange(-2.0, 2.1, dtype=np.float32)
 Y = np.array([-2, 0, 0, 0, 2], dtype=np.float32)
@@ -19675,7 +19675,7 @@ node = onnx.helper.make_node(
     "Shrink",
     inputs=["x"],
     outputs=["y"],
-    lambd=1.5,
+    lambda=1.5,
     bias=1.5,
 )
 X = np.arange(-2.0, 2.1, dtype=np.float32)

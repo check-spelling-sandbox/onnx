@@ -28598,9 +28598,9 @@ test_shape("_clip_end", x, end=10)
 ### <a name="Shrink"></a><a name="shrink">**Shrink**</a>
 
   Shrink takes one input data (Tensor<numeric>) and produces one Tensor output,
-  having same datatype and shape with input. It has two attributes, lambd and
-  bias. The formula of this operator is: If x < -lambd, y = x + bias;
-  If x > lambd, y = x - bias; Otherwise, y = 0.
+  having same datatype and shape with input. It has two attributes, lambda and
+  bias. The formula of this operator is: If x < -lambda, y = x + bias;
+  If x > lambda, y = x - bias; Otherwise, y = 0.
 
 #### Version
 
@@ -28611,8 +28611,8 @@ This version of the operator has been available since version 9 of the default O
 <dl>
 <dt><tt>bias</tt> : float (default is 0.0)</dt>
 <dd>The bias value added to output. Default is 0.</dd>
-<dt><tt>lambd</tt> : float (default is 0.5)</dt>
-<dd>The lambd value for the Shrink formulation. Default is 0.5.</dd>
+<dt><tt>lambda</tt> : float (default is 0.5)</dt>
+<dd>The lambda value for the Shrink formulation. Default is 0.5.</dd>
 </dl>
 
 #### Inputs
@@ -28647,7 +28647,7 @@ node = onnx.helper.make_node(
     "Shrink",
     inputs=["x"],
     outputs=["y"],
-    lambd=1.5,
+    lambda=1.5,
 )
 X = np.arange(-2.0, 2.1, dtype=np.float32)
 Y = np.array([-2, 0, 0, 0, 2], dtype=np.float32)
@@ -28665,7 +28665,7 @@ node = onnx.helper.make_node(
     "Shrink",
     inputs=["x"],
     outputs=["y"],
-    lambd=1.5,
+    lambda=1.5,
     bias=1.5,
 )
 X = np.arange(-2.0, 2.1, dtype=np.float32)
