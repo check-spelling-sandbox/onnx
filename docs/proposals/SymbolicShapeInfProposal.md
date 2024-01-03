@@ -146,7 +146,7 @@ ONNX_OPERATOR_SET_SCHEMA(
         })); 
 ```
 
-The symbol generation will happen at the graph level shape inference, therefore all the models (older opsets as well as the latest opset versions) can benefit from this enhancement. However, the data computation and propagation are tied to the OpScehma and will happen at node level. To begin with these functions will only be added to the latest op schemas. Older schemas can be extended to support data computation later, on a case by case basis to support some high priority scenarios. What this means is that older opset models will not benefit from shape inference improvements because of this enhancement.  
+The symbol generation will happen at the graph level shape inference, therefore all the models (older opsets as well as the latest opset versions) can benefit from this enhancement. However, the data computation and propagation are tied to the OpSchema and will happen at node level. To begin with these functions will only be added to the latest op schemas. Older schemas can be extended to support data computation later, on a case by case basis to support some high priority scenarios. What this means is that older opset models will not benefit from shape inference improvements because of this enhancement.  
   
 
 ## Special Cases 
