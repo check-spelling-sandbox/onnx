@@ -2357,10 +2357,10 @@ for from_type, to_type in test_cases:
             ],
             dtype=np.float32,
         )
-        little_endisan = sys.byteorder == "little"
+        little_endian = sys.byteorder == "little"
         np_uint16_view = np_fp32.view(dtype=np.uint16)
         np_bfp16 = (
-            np_uint16_view[1::2] if little_endisan else np_uint16_view[0::2]
+            np_uint16_view[1::2] if little_endian else np_uint16_view[0::2]
         )
         if to_type == "BFLOAT16":
             assert from_type == "FLOAT"
@@ -2377,7 +2377,7 @@ for from_type, to_type in test_cases:
             input = np_bfp16.reshape([3, 4])
             # convert bfloat to FLOAT
             np_fp32_zeros = np.zeros((len(np_bfp16) * 2,), dtype=np.uint16)
-            if little_endisan:
+            if little_endian:
                 np_fp32_zeros[1::2] = np_bfp16
             else:
                 np_fp32_zeros[0::2] = np_bfp16
@@ -2699,10 +2699,10 @@ for from_type, to_type in test_cases:
             ],
             dtype=np.float32,
         )
-        little_endisan = sys.byteorder == "little"
+        little_endian = sys.byteorder == "little"
         np_uint16_view = np_fp32.view(dtype=np.uint16)
         np_bfp16 = (
-            np_uint16_view[1::2] if little_endisan else np_uint16_view[0::2]
+            np_uint16_view[1::2] if little_endian else np_uint16_view[0::2]
         )
         if to_type == "BFLOAT16":
             assert from_type == "FLOAT"
@@ -2719,7 +2719,7 @@ for from_type, to_type in test_cases:
             input = np_bfp16.reshape([3, 4])
             # convert bfloat to FLOAT
             np_fp32_zeros = np.zeros((len(np_bfp16) * 2,), dtype=np.uint16)
-            if little_endisan:
+            if little_endian:
                 np_fp32_zeros[1::2] = np_bfp16
             else:
                 np_fp32_zeros[0::2] = np_bfp16
