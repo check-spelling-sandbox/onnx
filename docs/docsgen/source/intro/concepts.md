@@ -97,7 +97,7 @@ Once a model is converted into ONNX, the production environment
 only needs a runtime to execute the graph defined with ONNX
 operators. This runtime can be developed in any language
 suitable for the production application, C, java, python, javascript,
-C#, Webassembly, ARM...
+C#, WebAssembly, ARM...
 
 But to make that happen, the ONNX graph needs to be saved.
 ONNX uses *protobuf* to serialize the graph into
