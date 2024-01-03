@@ -365,7 +365,7 @@ combined_model = onnx.compose.merge_models(
 ```
 
 Additionally, a user can specify a list of `inputs`/`outputs` to be included in the combined model,
-effectively dropping the part of the graph that does't contribute to the combined model outputs.
+effectively dropping the part of the graph that doesn't contribute to the combined model outputs.
 In the following example, we are connecting only one of the two outputs in the first model
 to both inputs in the second. By specifying the outputs of the combined model explicitly, we are dropping the output not consumed from the first model, and the relevant part of the graph:
 ```python
