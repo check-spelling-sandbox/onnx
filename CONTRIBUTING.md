@@ -148,7 +148,7 @@ Some functionalities are tested with googletest. Those tests are listed in `test
 
 To run them, first build ONNX with `-DONNX_BUILD_TESTS=1` or `ONNX_BUILD_TESTS=1 pip install -e .`.
 
-##### Linux and MacOS
+##### Linux and macOS
 
 The cpp tests require dynamically linking to built libraries.
 
