@@ -22036,7 +22036,7 @@ expect(
 ### StringNormalizer
 There are 6 test cases, listed as following:
 <details>
-<summary>monday_casesensintive_lower</summary>
+<summary>monday_casesensitive_lower</summary>
 
 ```python
 input = np.array(["monday", "tuesday", "wednesday", "thursday"]).astype(object)
@@ -22055,13 +22055,13 @@ expect(
     node,
     inputs=[input],
     outputs=[output],
-    name="test_strnormalizer_export_monday_casesensintive_lower",
+    name="test_strnormalizer_export_monday_casesensitive_lower",
 )
 ```
 
 </details>
 <details>
-<summary>monday_casesensintive_nochangecase</summary>
+<summary>monday_casesensitive_nochangecase</summary>
 
 ```python
 input = np.array(["monday", "tuesday", "wednesday", "thursday"]).astype(object)
@@ -22079,13 +22079,13 @@ expect(
     node,
     inputs=[input],
     outputs=[output],
-    name="test_strnormalizer_export_monday_casesensintive_nochangecase",
+    name="test_strnormalizer_export_monday_casesensitive_nochangecase",
 )
 ```
 
 </details>
 <details>
-<summary>monday_casesensintive_upper</summary>
+<summary>monday_casesensitive_upper</summary>
 
 ```python
 input = np.array(["monday", "tuesday", "wednesday", "thursday"]).astype(object)
@@ -22104,7 +22104,7 @@ expect(
     node,
     inputs=[input],
     outputs=[output],
-    name="test_strnormalizer_export_monday_casesensintive_upper",
+    name="test_strnormalizer_export_monday_casesensitive_upper",
 )
 ```
 
