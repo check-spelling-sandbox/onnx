@@ -43,7 +43,7 @@ Denotation Propagation happens when an operation permutes, destroys or creates d
 
 ```
 for i, j in enumerate(perm):
-    out_dim_denotaion[i] = in_dim_denotation[j]
+    out_dim_denotation[i] = in_dim_denotation[j]
 ```
 
 ## Denotation Verification
