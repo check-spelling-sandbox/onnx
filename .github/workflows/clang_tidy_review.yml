@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-      # Pleaes note that it won't cause any failure here; it will only post comments in PRs
+      # Please note that it won't cause any failure here; it will only post comments in PRs
       - name: clang-tidy review
         uses: ZedThree/clang-tidy-review@246fe91b9849a61f5db473ef7a9e1120e860fd68 # v0.14.0
         with:
