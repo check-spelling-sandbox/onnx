@@ -7,4 +7,5 @@
         "--profile",
         "black"
     ],
+    "sarif-viewer.connectToGithubCodeScanning": "on",
 }

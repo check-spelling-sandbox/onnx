@@ -1,0 +1,7 @@
+github
+https
+onnx
+ONNX
+ssh
+ubuntu
+workarounds
