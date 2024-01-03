@@ -18870,7 +18870,7 @@ for input_type_proto in [tensor_type_proto, optional_type_proto]:
         "empty_no_input_name": "",
         "empty_no_input": None,
     }
-    for test_name_surfix, input_name in input_name_options.items():
+    for test_name_suffix, input_name in input_name_options.items():
         if input_type_proto == tensor_type_proto and input_name:
             # the input tensor cannot be empty if input name is provided.
             continue
@@ -18882,7 +18882,7 @@ for input_type_proto in [tensor_type_proto, optional_type_proto]:
         output = optional_has_element_reference_implementation(optional)
         test_name = (
             "test_optional_has_element_"
-            + test_name_surfix
+            + test_name_suffix
             + (
                 "_optional_input"
                 if input_type_proto == optional_type_proto
