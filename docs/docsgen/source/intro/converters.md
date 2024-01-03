@@ -40,7 +40,7 @@ Here is a short list:
   converts model from [pytorch](https://pytorch.org/).
 
 The main challenge for all these libraries is to keep up the rhythm.
-They must be updated everytime ONNX or the library they support
+They must be updated every time ONNX or the library they support
 have a new released version. That means three to five new releases
 per year.
 
