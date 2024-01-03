@@ -907,7 +907,7 @@ This version of the operator has been available since version 1 of the 'ai.onnx.
       would be mapped to the i-th value in the specified 'values_*' attribute. It
       implies that input's element type and the element type of the specified
       'keys_*' should be identical while the output type is identical to the
-      specified 'values_*' attribute. If an input element can not be found in the
+      specified 'values_*' attribute. If an input element cannot be found in the
       specified 'keys_*' attribute, the 'default_*' that matches the specified
       'values_*' attribute may be used as its output value.<br>
       Let's consider an example which maps a string tensor to an integer tensor.
@@ -1157,7 +1157,7 @@ This version of the operator has been available since version 3 of the 'ai.onnx.
       implies that input's element type and the element type of the specified
       'keys_*' should be identical while the output type is identical to the
       specified 'values_*' attribute. Note that the 'keys_*' and 'values_*' attributes
-      must have the same length. If an input element can not be found in the
+      must have the same length. If an input element cannot be found in the
       specified 'keys_*' attribute, the 'default_*' that matches the specified
       'values_*' attribute may be used as its output value. The type of the 'default_*'
       attribute must match the 'values_*' attribute chosen. <br>
