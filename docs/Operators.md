@@ -6898,7 +6898,7 @@ This version of the operator has been available since version 19 of the default 
 <dt><tt>W</tt> : T</dt>
 <dd>Weight tensor that will be used in the convolutions. It has shape (oC, C/group, kH, kW), where oC is the number of output channels and kH and kW are the kernel height and width. For more than 2 dimensions, it has shape (oC, C/group, k1, k2, ... , kn).</dd>
 <dt><tt>offset</tt> : T</dt>
-<dd>Offset tensor denoting the offset for the sampling locations in the convolution kernel. It has shape (N, offset_group * kH * kW * 2, oH, oW) for 2D data or (N, offset_group * k1 * k2 * ... * kn * n, o1, o2, ... , on) for nD data. Use linear interpolationfor fractional offset values. Sampling locations outside of the padded input tensor gives zero.</dd>
+<dd>Offset tensor denoting the offset for the sampling locations in the convolution kernel. It has shape (N, offset_group * kH * kW * 2, oH, oW) for 2D data or (N, offset_group * k1 * k2 * ... * kn * n, o1, o2, ... , on) for nD data. Use linear interpolation for fractional offset values. Sampling locations outside of the padded input tensor gives zero.</dd>
 <dt><tt>B</tt> (optional) : T</dt>
 <dd>Optional 1D bias of length oC to be added to the convolution. Default is a tensor of zeros.</dd>
 <dt><tt>mask</tt> (optional) : T</dt>
