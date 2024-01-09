@@ -449,7 +449,7 @@ class GridSample(Base):
         )
 
     @staticmethod
-    def export_volumeetric_gridsample_mode_aligncorners() -> None:
+    def export_volumetric_gridsample_mode_aligncorners() -> None:
         X = np.array(
             [
                 [

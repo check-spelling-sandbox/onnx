@@ -7536,7 +7536,7 @@ expect(
 
 </details>
 <details>
-<summary>volumeetric_gridsample_mode_aligncorners</summary>
+<summary>volumetric_gridsample_mode_aligncorners</summary>
 
 ```python
 X = np.array(
